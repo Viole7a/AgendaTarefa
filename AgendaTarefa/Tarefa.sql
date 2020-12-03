@@ -1,14 +1,12 @@
 ﻿CREATE TABLE [dbo].[Tarefa]
 (
-	[Id] INT NOT NULL PRIMARY KEY, 
+	[Id] INT IDENTITY NOT NULL PRIMARY KEY, 
     [Usuario] INT NOT NULL,
     [Titulo] NVARCHAR(50) NOT NULL, 
     [TipoTarefa] INT NOT NULL,
     [Descricao] NVARCHAR(MAX) NULL, 
     [DataInclusao] DATETIME NOT NULL, 
     [Prazo] DATETIME NULL, 
-    [Data Inicial] DATETIME NULL, 
-    [Data Final] DATETIME NULL, 
     [Status] INT NOT NULL,
     [Progressao] DECIMAL NULL, 
     [Prioridade] INT NOT NULL,
